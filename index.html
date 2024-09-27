@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="nav-left">
+          <img id="toggle" src="toggle.svg" class="toggle" alt="toggle" />
+          <a href="#" class="navbar-brand">
+            <img src="img.png" class="logo" alt="img" /> Keep
+          </a>
+
+          <form class="search-bar">
+            <img src="search.svg" class="search-icon" alt="Search Icon" />
+            <input
+              class="search-input"
+              placeholder="Search"
+              type="search"
+              id="searchInput"
+            />
+          </form>
+        </div>
+        <div class="nav-right">
+          <img src="nav1.svg" class="nav-icon" alt="nav1" />
+          <img src="nav2.svg" class="nav-icon" alt="nav2" />
+          <img src="nav3.svg" class="nav-icon" alt="nav3" />
+          <img src="nav4.png" class="nav-icon" alt="nav4" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li id="list1" class="list-item">
+            <img id="img1" src="s1.svg" class="image-toggle" alt="" />
+            <a href="#" class="nav-link">Notes</a>
+          </li>
+          <li id="list2" class="list-item">
+            <img id="img2" src="s2.svg" class="image-toggle image-circle" alt="" />
+            <a href="#" class="nav-link">Reminder</a>
+          </li>
+          <li id="list3" class="list-item">
+            <img id="img3" src="s3.svg" class="image-toggle image-circle" alt="" />
+            <a href="#" class="nav-link">Edit labels</a>
+          </li>
+          <li id="list4" class="list-item">
+            <img id="img4" src="s4.svg" class="image-toggle image-circle" alt="" />
+            <a href="#" class="nav-link">Archive</a>
+          </li>
+          <li id="list5" class="list-item">
+            <img id="img5" src="s5.svg" class="image-toggle image-circle" alt="" />
+            <a href="#" class="nav-link">Trash</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="container-body">
+          <input
+            id="input_title"
+            type="search"
+            class="input-box"
+            placeholder="Take a note..."
+            required
+          />
+
+          <div class="card" id="todo-form" style="display: none">
+            <input
+              type="search"
+              id="todo-title"
+              placeholder="Title"
+              class="input-focus"
+            />
+            <input
+              type="search"
+              id="todo-description"
+              placeholder="take a note..."
+              class="input-focus"
+            />
+            <div class="input-icons">
+              <div>
+                <img src="ip1.svg" class="input-icon" alt="" />
+                <img src="ip2.svg" class="input-icon" alt="" />
+                <img src="ip3.svg" class="input-icon" alt="" />
+                <img src="ip4.svg" class="input-icon" alt="" />
+                <img src="ip5.svg" class="input-icon" alt="" />
+                <img src="ip7.svg" class="input-icon" alt="" />
+              </div>
+
+              <div class="close-div" id="close-div">Close</div>
+            </div>
+          </div>
+        </div>
+        <ul class="todo-list" id="todo-list"></ul>
+
+      </div>
+    </div>
+
+    <script src="fuction.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
